@@ -1,0 +1,66 @@
+footer.mainFooter {
+	position: relative;
+
+	margin-top: 50px;
+	padding: 25px 0;
+	
+	text-align: center;
+	background-color: $footerColor;
+	color: $footerFontColor;
+
+	@media screen and (min-width: $changeWidth) {
+		&:before,
+		&:after {
+			content: '';
+
+			position: absolute;
+			
+			display: block;
+
+			background-repeat: no-repeat;
+		}
+
+		&:before {
+			bottom: -42px;
+			left: 0;
+
+			width: 269px;
+			height: 288px;
+
+			background: url('../img/tree2.png');
+
+		}
+
+		&:after {
+			right: -90px;
+			bottom: -70px;
+			
+			width: 419px;
+			height: 359px;
+			
+			background: url('../img/rose_new.png');
+		}
+	}
+
+	.footer-menu {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-menu__item {
+		padding: 0 10px;
+		margin: 0 10px;
+	}
+	
+	.footer-menu__link {
+		color: #000000;
+	}
+
+	.rights {
+		margin-top: 17px;
+	}
+
+	.rights__link {
+		color: $fourthFontColor;
+	}
+}

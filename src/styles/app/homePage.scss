@@ -1,0 +1,18 @@
+.homePage {
+	// text-align: center;
+
+	.services-article {
+		position: relative;
+	}
+
+	.services-title {
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		color: $secondaryFontColor;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		white-space: nowrap;
+	}
+}

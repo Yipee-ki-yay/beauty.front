@@ -1,0 +1,148 @@
+header.mainHeader {
+	padding: 30px 0 26px 0;
+
+	background: radial-gradient(circle, #BCECF0 0%, #87D4DC 100%);
+	color: $headerFontColor;
+	
+	text-align: center;
+
+	.row-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.row-wrapper + .row-wrapper {
+		margin-top: 60px;
+	}
+
+	.main-menu__btn {
+		font-size: 24px;
+	}
+
+	.main-menu-nav {
+		display: none;
+	}
+
+	.logo-wrapper {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.city-wrapper {
+		color: #ffffff;
+
+		font-size: 11px;
+		font-weight: 600;
+		line-height: 13px;
+		text-transform: uppercase;
+		letter-spacing: 5.5px;
+	}
+
+	.button--login,
+	.button--top {
+		display: flex;
+		align-items: center;
+
+		span {
+			display: none;
+		}	
+
+		.icomoon {
+			font-size: 35px;
+		}
+
+		@media screen and (min-width: $changeWidth) {
+			span {
+				display: block;
+			}						
+		}
+	}
+
+	.button--login {
+		margin-right: auto;
+		margin-left: 10px;
+		
+		line-height: 45px;
+		
+		@media screen and (min-width: $changeWidth) {
+			margin-left: 30px;					
+		}
+	}
+
+	.button--search {
+		padding: 12px 65px;
+		border-radius: 22.5px;
+		
+		color: #ffffff;
+		background: linear-gradient(225deg, #127C91 0%, #0C4652 100%);
+	}
+
+	.search-form {
+		position: relative;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 100%;
+
+		@media screen and (min-width: $changeWidth) {
+			&:after {
+				content: '';
+				
+				position: absolute;
+				left: -155px;
+				top: -17px;
+				
+				display: block;
+				width: 179px;
+				height: 112px;
+				
+				background: url('../img/tree.png');
+			}
+		}
+	}
+
+	.form-item-header--search-wrap {
+		width: 63%;
+
+		.form-item-header {
+			border-radius: 3px 0 0 3px;
+		}
+	}
+
+	.form-item-header--category-wrap {
+		width: 37%;
+
+		.form-item-header {
+			border-radius: 0 3px 3px 0;
+		}
+
+		&:before {
+			content: '';
+
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			display: block;
+			width: 1px;
+			height: 37px;
+
+			background-color: #bcbcbc;
+		}
+	}
+	
+	.button-submit-wrapper {
+		width: 100%;
+		margin-top: 15px;
+
+		@media screen and (min-width: $changeWidth) {
+			width: auto;
+			margin-left: auto;
+			margin-top: 0;
+		}
+	}
+}

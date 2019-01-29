@@ -1,0 +1,15 @@
+.newAdPage {
+	.form-newAd {
+		max-width: 500px;
+
+		text-align: left;
+
+		.icomoon {
+			font-size: 20px;
+		}
+	}
+
+	.form-row + .form-row--btn-wrap {
+		margin-top: 45px;
+	}
+}
