@@ -36,6 +36,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-square-load:before {
+  content: "\e900";
+}
 .icon-user:before {
   content: "\e917";
 }

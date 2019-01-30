@@ -1,7 +1,25 @@
 .personalPage {
 	.form-about {
 		max-width: 385px;
+	}
 
-		text-align-last: left;
+	.logout-form {
+		position: absolute;
+    right: 0;
+		top: 7px;
+		
+		display: inline-block;
+	}
+
+	.content-wrapper + .subtitle {
+		margin-top: 70px;
+	}
+
+	.client + .offers-article {
+		margin-top: 20px;
+	}
+
+	.offers-article {
+		flex-grow: 1;
 	}
 }

@@ -39,6 +39,7 @@ ol.decimal {
 
 .capitalize { text-transform: capitalize; }
 .uppercase { text-transform: uppercase; }
+.text-left {text-align: left;}
 .text-right {text-align: right;}
 .text-center {text-align: center;}
 .bold {font-weight: 700;}
@@ -56,6 +57,10 @@ ol.decimal {
 
 .text-color-third {
 	color: #797979;
+}
+
+.text-color-fourth {
+	color: #D62D14;
 }
 
 .content-wrapper {
@@ -99,6 +104,10 @@ ol.decimal {
 .secondary-descr {
 	font-size: 12px;
 	line-height: 14px;
+}
+.third-descr {
+	font-size: 14px;
+	line-height: 24px;
 }
 .section-descr {
 	margin-top: 25px;
@@ -246,8 +255,9 @@ select,
 a {
 	// cursor: pointer;
 	font-size: inherit;
-	transition: all ease 0.4s;
-	// transition: background ease 0.4s;
+	// transition: all ease 0.4s;
+	transition: background ease 0.4s,
+							color ease 0.4s;
 }
 
 input, select {

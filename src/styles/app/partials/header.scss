@@ -61,7 +61,7 @@ header.mainHeader {
 		}
 	}
 
-	.button--login {
+	.header-wrapper {
 		margin-right: auto;
 		margin-left: 10px;
 		
@@ -70,6 +70,10 @@ header.mainHeader {
 		@media screen and (min-width: $changeWidth) {
 			margin-left: 30px;					
 		}
+	}
+
+	.button--login {
+		padding: 0;
 	}
 
 	.button--search {
