@@ -54,6 +54,10 @@
 	background: #919191;
 }
 
+.button--login {
+	min-width: 120px;
+}
+
 // .button--linear-bg {
 // 	background: linear-gradient(225deg, #127C91 0%, #0C4652 100%);
 // }
@@ -343,9 +347,9 @@ ul.breadcrumbs {
 
 	&.page-description {
 		margin-top: 25px;
-		p {
+		// p {
 			// font-size: $large;
-		}
+		// }
 		.link-wrapper {
 			text-align: right;
 		}
@@ -437,6 +441,58 @@ ul.breadcrumbs {
 .form-row-label {
 	display: block;
 }
+	/* begin checkbox hidden */
+	.checkbox-hidden {
+		position: absolute;
+
+		height: 0;
+		width: 0;
+		opacity: 0;
+
+		cursor: pointer;
+	}
+
+	.checkmark {
+		position: relative;
+
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+
+		border-radius: 50%; 
+		background: linear-gradient(45deg, #1E8B9A 0%, #0D5361 100%);
+	}
+
+	.checkmark + span {
+		margin-left: 8px;
+	}
+
+	.checkmark:after {
+		content: '';
+
+		position: absolute;
+		top: 3px;
+		left: 7px;
+		
+		display: none;
+		width: 7px;
+		height: 12px;
+		border: solid #fff;
+		border-width: 0 2px 2px 0;
+		
+		transform: rotate(45deg);
+	}
+
+	input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	.form-label--checkbox {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+	/* end checkbox hidden */
 /* end form staff */
 
 /* begin grid staff */
