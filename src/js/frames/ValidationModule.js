@@ -1,4 +1,4 @@
-ValidationModule = (function() {
+glob.ValidationModule = (function() {
 	function validate(inputElement, validationsArray) {
 		const validations = validationsArray;
 		let messages = [];
@@ -101,7 +101,7 @@ ValidationModule = (function() {
 	return {
 		isValid: isValid,
 	}
-})()
+})();
 
 // ---------Validation Script Test-------------
 

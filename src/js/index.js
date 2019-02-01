@@ -23,15 +23,15 @@ $(document).ready(function() {
 	
 	// =================Include Modules==============================
 
-	@@include('testModule.js')
+	@@include('testModule.js');
 
   /*@@include('frames/PopupModule.js')*/
-  /*@@include('frames/ValidationModule.js')*/
+  @@include('frames/ValidationModule.js');
 	/*@@include('frames/AnimateBorderModule.js')*/
   /*@@include('frames/custom_Input_Type_number.js')*/
   /*@@include('frames/AccordionModule.js')*/
   /*@@include('frames/ToggleContentModule.js')*/
-  @@include('frames/SwitchTabsModule.js')
+  @@include('frames/SwitchTabsModule.js');
   /*@@include('frames/TextLimitModule.js')*/
   /*@@include('frames/StickyBlockModule.js')*/
 
@@ -153,6 +153,35 @@ $(document).ready(function() {
 		});
 	})( jQuery, window, document );
 	/* end input type file set title onChoose file */
+
+	/* begin add mask to phone's inputs */
+	(function() {
+		if ( ! $('input[type=tel]').length ) return;
+
+		let cleave = new Cleave('input[type=tel]', {
+			numericOnly: true,
+			blocks: [0, 3, 0, 3, 2, 2],
+			delimiters: ["(", ")", " ", "-"],
+		});
+	})();
+	/* end add mask to phone's inputs */
+
+	/* begin validation pages */
+	(function() {
+		let $submitBtns = $('.form-about button');
+
+		$submitBtns.on('click', function(e) {
+			let $target = $(e.target);
+			let $closestForm = $target.closest('.form');
+
+
+			if(!glob.ValidationModule.isValid($closestForm)) {
+				e.preventDefault();
+			}
+		});
+
+	})();
+	/* end validation pages */
 
 });
 

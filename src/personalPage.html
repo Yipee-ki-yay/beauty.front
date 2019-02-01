@@ -66,7 +66,7 @@
 
                 <div class="toggleBlocks-list sectionBlock content-wrapper">
                     <div id="about-tab" class="toggleBlock active">
-                      <form action="#" class="form form-about" method="POST">
+                      <form action="#" class="form form-about">
                         <!-- begin form-row -->
                         <div class="form-row">
                           <label class="form-row-label">
@@ -75,7 +75,9 @@
                             </div>
                             
                             <input type="text" 
-                                  name="login" 
+                                  name="login"
+                                  data-validate="required"
+                                  data-error-text="Необходимо заполнить поле"
                                   class="form-item text-color-third secondary-descr" 
                                   placeholder="Введите Ваш логин">
                           </label>
@@ -102,6 +104,8 @@
                             
                             <input type="email" 
                             name="email"
+                            data-validate="required"
+                            data-error-text="Необходимо заполнить поле"
                             class="form-item text-color-third secondary-descr" 
                             placeholder="Введите Ваш E-mail">                              
                           </label>
@@ -114,6 +118,8 @@
                             
                             <input type="tel" 
                                   name="number" 
+                                  data-validate="required"
+                                  data-error-text="Необходимо заполнить поле"
                                   class="form-item text-color-third secondary-descr" 
                                   placeholder="Введите Ваш телефон">
                           </label>
