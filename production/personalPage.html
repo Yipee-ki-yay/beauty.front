@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>title</title>
+  <!--  -->
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-config" content="browserconfig.xml">
+
+<link rel="icon" type="image/png" href="favicon.ico">
+
+<!-- Font Awesome -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Fonts -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+
+<link rel="stylesheet" href="css/main.min.css">
+
+  <!--  -->
+
+
+</head>
+
+<body>
+
+  <!--[if lte IE 11]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    
+
+  <div class="mainWrapper">
+
+    <div class="contentWrapper">
+      <!--  -->
+      <header class="mainHeader">
+	<div class="mcontainer">
+		<!-- begin row-wrapper -->
+		<div class="row-wrapper">
+		
+			<div class="main-menu-wrapper">
+				<button class="main-menu__btn">
+					<i class="icomoon icon-burger"></i>
+				</button>
+
+				<nav class="main-menu-nav">
+					<ul class="main-menu">
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Abba</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Abba</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#" class="main-menu__link">Abba</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header-wrapper">
+				<a href="/personalPage.html" class="button button--login bold">
+					<i class="icomoon icon-user"></i>
+					<span>Личный кабинет</span>
+				</a>
+				
+				<div class="avatar-wrapper flex center bold">
+					<a class="avatar" href="/personalPage.html">
+						<img src="img/foto_id.jpg" class="avatar__img" alt="avatar">
+					</a>
+					<span>Svetlana_zp</span>
+				</div>
+			</div>
+
+			<!-- begin logo -->
+			<div class="logo-wrapper">
+				<button class="city-wrapper">
+					Запорожье
+				</button>
+				
+				<div class="logo">
+					<a href="/index.html" class="logo__link">
+						<img src="img/logo.png" alt="logo" class="logo__img">
+					</a>
+				</div>
+			</div>
+			<!-- end logo -->
+
+			<a href="/newAdPage.html" class="button button--top secondary-title uppercase bold">
+				<i class="icomoon icon-plus"></i>
+				<span>Подать объявление</span>
+			</a>
+			
+		</div>
+		<!-- end row-wrapper -->
+		<!-- begin row-wrapper -->
+		<div class="row-wrapper">
+			<form action="#" class="search-form">
+
+				<div class="form-items-wrapper">
+					<label class="form-item--with-ico form-item-header--search-wrap">
+						<input type="text" 
+									 class="form-item-header" 
+									 name="search"
+									 placeholder="Поиск">
+						<i class="icomoon icon-saerch"></i>
+					</label>
+					
+					<label class="form-item--with-ico form-item-header--category-wrap">
+						<select name="category" class="form-item-header form-item-header--select">
+							<option value="" selected hidden>выберите рубрику</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+						<!-- <i class="icomoon icon-next"></i> -->
+					</label>
+				</div>
+
+				<div class="button-submit-wrapper">
+					<button class="button button--search secondary-title uppercase bold">Найти</button>
+				</div>
+
+			</form>
+		</div>
+			<!-- end row-wrapper -->
+
+	</div>
+</header>
+      <!--  -->
+
+      <!-- Start of page code insertion here -->
+      <div id="personalPage" class="personalPage page">
+        <div class="mcontainer">
+          <!-- begin pageSection -->
+          <div class="pageSection">
+            <h2 class="page-title bold uppercase">Личный кабинет</h2>
+            <div class="secondary-title section-descr">(вся информация о вас)</div>
+
+            <article class="content-wrapper">
+
+                <div class="tabsNav tabButtons">
+                  <button 
+                    data-target="about-tab" 
+                    class="category tab active button-tab uppercase bold">
+                    Основная информация
+                  </button>
+                  <button 
+                    data-target="reviews-tab" 
+                    class="category tab button-tab uppercase bold">
+                    Отзывы
+                    <span class="text-color-scndry">(12)</span>
+                  </button>
+                  <button 
+                    data-target="all-ad-tab" 
+                    class="category tab button-tab uppercase bold">
+                    Все объявления
+                    <sup class="quantity-item secondary-descr">1</sup>
+                  </button>
+    
+                  <form id="logout-form" class="logout-form" action="#" method="#">
+                    <button class="button button--quiet">
+                      <i class="icomoon icon-logout"></i>
+                      <span>
+                        Выйти
+                      </span>
+                    </button>
+                  </form>
+                </div>
+
+                <div class="toggleBlocks-list sectionBlock content-wrapper">
+                    <div id="about-tab" class="toggleBlock active">
+                      <form action="#" class="form form-about">
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">
+                              Логин*
+                            </div>
+                            
+                            <input type="text" 
+                                  name="login"
+                                  data-validate="required"
+                                  data-error-text="Необходимо заполнить поле"
+                                  class="form-item text-color-third secondary-descr" 
+                                  placeholder="Введите Ваш логин">
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">
+                              Ваша специальность
+                            </div>
+                            
+                            <input type="text" 
+                                  name="title" 
+                                  class="form-item text-color-third secondary-descr" 
+                                  placeholder="Например: парикмахер-модельер">
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">Электронная почта*</div>
+                            
+                            <input type="email" 
+                            name="email"
+                            data-validate="required"
+                            data-error-text="Необходимо заполнить поле"
+                            class="form-item text-color-third secondary-descr" 
+                            placeholder="Введите Ваш E-mail">                              
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">Телефон*</div>
+                            
+                            <input type="tel" 
+                                  name="number" 
+                                  data-validate="required"
+                                  data-error-text="Необходимо заполнить поле"
+                                  class="form-item text-color-third secondary-descr" 
+                                  placeholder="Введите Ваш телефон">
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">Новый пароль</div>
+                            
+                            <input type="password" 
+                                  name="pass" 
+                                  class="form-item text-color-third secondary-descr" 
+                                  placeholder="Введите Ваш новый пароль">
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                            <div class="form-row-title text-color-third">Фото профиля</div>
+                            <input id="file" 
+                                type="file" 
+                                name="file"
+                                class="inputfile" 
+                              >
+                            <label class="filebtn input-file-wrapper" for="file">
+                              <i class="icomoon icon-square-load"></i>                            
+                              <span class="secondary-descr uppercase bold">Загрузить</span>
+                            </label>
+                            
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row">
+                          <label class="form-row-label">
+                            <div class="form-row-title text-color-third">О себе</div>
+                            
+                            <textarea 
+                              name="text" 
+                              class="form-item text-color-third secondary-descr"
+                              cols="30" 
+                              rows="10"
+                              placeholder="Напишите подробную информацию о себе, как о специалисте"></textarea>
+                          </label>
+                        </div>
+                        <!-- end form-row -->
+                        <!-- begin form-row -->
+                        <div class="form-row form-row--btn-wrap">
+                            <button class="button button--secondary main-descr">Сохранить</button>
+                        </div>
+                        <!-- end form-row -->
+                      </form>
+                    </div>
+                    <div id="reviews-tab" class="toggleBlock">
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                            <i class="icomoon icon-like text-color-scndry"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                              <i class="icomoon icon-dislike text-color-fourth"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                            <i class="icomoon icon-like text-color-scndry"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                            <i class="icomoon icon-like text-color-scndry"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                            <i class="icomoon icon-like text-color-scndry"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      <!-- begin article -->
+                      <article class="review flex">
+
+                        <div class="review__avatar">
+                          <a href="#">
+                            <img src="img/foto_id.jpg" alt="" class="avatar avatar--secondary">
+                          </a>
+                        </div>
+
+                        <div class="review__content">
+                          <div class="review__info flex center">
+                            <i class="icomoon icon-like text-color-scndry"></i>
+                            <a href="#" class="text-color-main underline bold">
+                              Janna_25,
+                            </a>
+                            <time>12.12.2018</time>
+                          </div>
+
+                          <p class="review__text third-descr text-color-third">
+                              Первый раз подстриглась у Светланы 6 лет назад, с тех пор больше не могу отказать себе в удовольствии регулярно встречаться с ней :))
+                              Она профессионал своего дела! Всегда готова посоветовать что пойдет и сделает лучше чем я задумывала. Очень «легкая» рука!  Смело импровизирует с длиной волос и моделями стрижек.
+                              А еще  она очень классная, позитивная и с ней всегда приятно поболтать о том о сем!
+                              Успехов тебе Светик!
+                          </p>
+
+                        </div>
+
+                      </article>
+                      <!-- end article -->
+                      
+                    </div>
+                    <div id="all-ad-tab" class="toggleBlock">
+
+                      <div class="subtitle third-title uppercase bold text-left text-color-scndry">
+                        Активные
+                      </div>
+
+                      <!-- begin grid-wrapper -->
+                      <div class="content-wrapper">
+                        <div class="flex mrow wrap">
+                          <!-- begin article -->
+                          <article class="flex column mcol-xs-12 mcol-sm-6">
+                            <div class="client">
+                              <span class="plus"></span>
+                              <a href="#" class="text-color-fourth underline bold">
+                                Milla_Yolovich,
+                              </a>
+                              <span>тел.</span>
+                              <a class="text-color-main" href="tel:380665552313">066-555-23-13</a>
+                            </div>
+
+                            <div class="offers-article">
+                              <header class="offers-article-header">                    
+                                <!-- begin first part -->
+                                <div class="first-part flex">
+                                  <i class="icomoon icon-hair-cut"></i>
+        
+                                  <div class="first-part-text">
+                                    <div class="third-title bold first-part-text__title">
+                                      Женская стрижка и покраска
+                                    </div>
+                                    <div class="main-descr text-color-third first-part-text__descr">
+                                      Клиент оплачивает все расходные материалы самостоятельно 
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end first part -->
+                                <!-- begin second part -->
+                                <div class="second-part">
+                                  <button class="button button--secondary main-descr">Записаться</button>
+        
+                                  <div class="main-descr text-color-third second-part__details">
+                                      Свободная дата:
+                                      <span class="bold text-color-main">
+                                        15.02.2019
+                                      </span>
+                                  </div>
+        
+                                </div>
+                                <!-- end second part -->
+                              </header>
+                              <footer class="offers-article-footer">
+                                <!-- begin third part -->
+                                <div class="third-part flex">
+                                    <a href="#" class="secondary-descr underline text-color-third">Маникюр / педикюр</a>
+                                    <div class="secondary-descr text-color-third third-part__master">
+                                      Мастер:
+                                      <a href="#" class="underline text-color-main">Виктория</a>
+                                    </div>
+                                    <div class="secondary-descr text-color-third third-part__reviews">
+                                      Отзывы:
+                                      <i class="icomoon icon-like"></i>
+                                      <span>5</span>
+                                      <i class="icomoon icon-dislike"></i>
+                                      <span>0</span>
+                                    </div>
+        
+                                </div>
+                                <!-- end third part -->
+                              </footer>
+                            </div>
+        
+                          </article>
+                          <!-- end article -->
+                        </div>
+                      </div>
+                      <!-- end grid-wrapper -->
+
+                      <div class="subtitle third-title uppercase bold text-left text-color-scndry">
+                        Архивные
+                      </div>
+
+                      <!-- begin grid-wrapper -->
+                      <div class="content-wrapper">
+                        <div class="flex mrow wrap">
+                          <!-- begin article -->
+                          <article class="flex column mcol-xs-12 mcol-sm-6">
+
+                            <div class="client">
+                              <a href="#" class="text-color-main underline bold">
+                                Milla_Yolovich,
+                              </a>
+                              <span>тел.</span>
+                              <a class="text-color-main" href="tel:380665552313">066-555-23-13</a>
+                            </div>
+
+                            <div class="offers-article offers-article--archive">
+                              <header class="offers-article-header">                    
+                                <!-- begin first part -->
+                                <div class="first-part flex">
+                                  <i class="icomoon icon-hair-cut"></i>
+        
+                                  <div class="first-part-text">
+                                    <div class="third-title bold first-part-text__title">
+                                      Женская стрижка и покраска
+                                    </div>
+                                    <div class="main-descr text-color-third first-part-text__descr">
+                                      Клиент оплачивает все расходные материалы самостоятельно 
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end first part -->
+                                <!-- begin second part -->
+                                <div class="second-part">
+                                  <button class="button button--secondary button--disabled main-descr">Не активно</button>
+        
+                                  <div class="main-descr text-color-third second-part__details">
+                                      Свободная дата:
+                                      <span class="bold text-color-main">
+                                        15.02.2019
+                                      </span>
+                                  </div>
+        
+                                </div>
+                                <!-- end second part -->
+                              </header>
+                              <footer class="offers-article-footer">
+                                <!-- begin third part -->
+                                <div class="third-part flex">
+                                    <a href="#" class="secondary-descr underline text-color-third">Маникюр / педикюр</a>
+                                    <div class="secondary-descr text-color-third third-part__master">
+                                      Мастер:
+                                      <a href="#" class="underline text-color-main">Виктория</a>
+                                    </div>
+                                    <div class="secondary-descr text-color-third third-part__reviews">
+                                      Отзывы:
+                                      <i class="icomoon icon-like"></i>
+                                      <span>5</span>
+                                      <i class="icomoon icon-dislike"></i>
+                                      <span>0</span>
+                                    </div>
+        
+                                </div>
+                                <!-- end third part -->
+                              </footer>
+                            </div>
+        
+                          </article>
+                          <!-- end article -->
+                          <!-- begin article -->
+                          <article class="flex column mcol-xs-12 mcol-sm-6">
+
+                            <div class="client">
+                              <span class="bold">Никто не записался :(</span>
+                            </div>
+
+                            <div class="offers-article offers-article--archive">
+                              <header class="offers-article-header">                    
+                                <!-- begin first part -->
+                                <div class="first-part flex">
+                                  <i class="icomoon icon-hair-kit"></i>
+        
+                                  <div class="first-part-text">
+                                    <div class="third-title bold first-part-text__title">
+                                      Покраска волос
+                                    </div>
+                                    <div class="main-descr text-color-third first-part-text__descr">
+                                      Клиент оплачивает все расходные материалы самостоятельно 
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- end first part -->
+                                <!-- begin second part -->
+                                <div class="second-part">
+                                  <button class="button button--secondary button--disabled main-descr">Не активно</button>
+        
+                                  <div class="main-descr text-color-third second-part__details">
+                                      Свободная дата:
+                                      <span class="bold text-color-main">
+                                        18.02.2019
+                                      </span>
+                                  </div>
+        
+                                </div>
+                                <!-- end second part -->
+                              </header>
+                              <footer class="offers-article-footer">
+                                <!-- begin third part -->
+                                <div class="third-part flex">
+                                    <a href="#" class="secondary-descr underline text-color-third">Маникюр / педикюр</a>
+                                    <div class="secondary-descr text-color-third third-part__master">
+                                      Мастер:
+                                      <a href="#" class="underline text-color-main">Инна</a>
+                                    </div>
+                                    <div class="secondary-descr text-color-third third-part__reviews">
+                                      Отзывы:
+                                      <i class="icomoon icon-like"></i>
+                                      <span>12</span>
+                                      <i class="icomoon icon-dislike"></i>
+                                      <span>0</span>
+                                    </div>
+        
+                                </div>
+                                <!-- end third part -->
+                              </footer>
+                            </div>
+        
+                          </article>
+                          <!-- end article -->
+                        </div>
+                      </div>
+                      <!-- end grid-wrapper -->
+
+                    </div>
+                  
+                </div>
+
+            </article>
+          </div>
+          <!-- end pageSection -->
+        </div>
+      </div>  
+
+      <!-- End of page code insertion here -->
+
+      
+    </div>
+    <!--  -->
+    
+    <!--  -->
+    <footer class="mainFooter">
+	<div class="mcontainer">
+
+		<ul class="footer-menu">
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link secondary-title uppercase bold">О нас</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link secondary-title uppercase bold">Все услуги</a>
+			</li>
+			<li class="footer-menu__item">
+				<a href="#" class="footer-menu__link secondary-title uppercase bold">Контакты</a>
+			</li>
+		</ul>
+
+		<div class="rights">
+			<a href="#" class="rights__link">
+					&copy; Beauty Love. Все права защищены. 2018
+			</a>
+		</div>
+	
+	</div>
+</footer>
+    <!--  -->
+  </div>
+  <!--  -->
+  <!--________SCRIPTS______-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/cleave.min.js"></script>
+
+<script type="text/javascript" src="js/index.min.js"></script>
+
+  <!--  -->
+</body>
+
+</html>
